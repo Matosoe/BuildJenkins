@@ -7,7 +7,7 @@ app = Flask(__name__)
 # default route
 @app.route('/')
 def index():
-    return 'Build via Jenkins via click a mony'
+    return 'Build via Jenkins via click a mony - matosoe v1'
 
 # function for responses
 def results():
@@ -18,7 +18,7 @@ def results():
     action = req.get('queryResult').get('action')
 
     # return a fulfillment response
-    return {'fulfillmentText': 'This is a response from webhook.'}
+    return {'fulfillmentText': 'This is a response from webhook. - matosoe v1'}
 
 # create a route for webhook
 @app.route('/webhook', methods=['GET', 'POST'])
